@@ -1,0 +1,59 @@
+/*Copyright Jonathan de Laine 2021*/
+
+/*CSS is used to control styling of text and sections marked up in HTML*/
+/*Call out the class or ID used in HTML using '.' icons or modify segments like body*/
+
+.site-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    float: none;
+    /*border: 2px solid blue;*/
+}
+body {
+    background-color:aliceblue;
+}
+a {
+  text-decoration: none;  
+}
+footer {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 2px solid blue;*/
+    clear: both;
+}
+
+.footer-nav {text-align: center;}
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-nav li {
+    display: inline-block;
+    padding: 0 5px 20px 5px;
+}
+.footer-text{
+    display: block;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    
+    text-align: center;
+    text-transform: none;
+
+    width: 100%;
+
+    color: #ddd;
+}
