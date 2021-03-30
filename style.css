@@ -18,6 +18,20 @@ body {
 a {
   text-decoration: none;  
 }
+
+.panel {
+    cursor: pointer;
+}
+.panel-content {
+    display: none;
+    overflow: auto;
+    padding: 0px 15px;  
+    font-family: sans-serif;
+    background: white;
+}
+.panel-content-active + .panel-content { /*This  */
+    display: block;
+}
 footer {
     padding-left: 5%;
     padding-right: 5%;
