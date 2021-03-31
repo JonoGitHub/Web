@@ -26,9 +26,28 @@ Thanks for checking out my webpage!
 
             <div class = "allpanels">
                     <!--Experiment with collapsibles here-->
-                <button type = "button" class = "panel">Click Here</button>
+                <button type = "button" class = "panel">
+
+                    <img class = "panel-img" src = images/MQTT-Cat-Feeder.jpg>
+                    <div class="panel-overlay">
+                        <div class="panel-overlay-text">
+                            MQTT Smart Cat Feeder
+                        </div>
+                    </div>
+                   
+                    
+                    
+                </button>
                     <div class = "panel-content"> 
                         <p>Lorem ipsum...</p>
+                    </div>
+                <button type = "button" class = "panel">
+                    
+                    <img class = "panel-img" src = images/3D-Printed-Turbine.jpg>
+
+                </button>
+                    <div class = "panel-content"
+                        <p> Lorem ipsum...</p>
                     </div>
             </div>
             
@@ -59,7 +78,7 @@ Thanks for checking out my webpage!
             </footer>
         </main>
 
-        <script>
+        <script> /* This script is used to hide/show project descriptions on click */
             document.querySelectorAll('.panel').forEach(button => {
                 button.addEventListener('click', () => {
 
