@@ -1,6 +1,6 @@
 <!-- All Code Written by Jonathan de Laine. Copright 2021
 Thanks for checking out my webpage!
- I decided to "code" my own webpage for several reasons:
+ I decided to code my own webpage for several reasons:
     1. I enjoy coding. Pure and simple!
     2. I struggle with creativity in the traditional sense.
         By using technology and TYPING what I want, I can more effectively
@@ -9,7 +9,9 @@ Thanks for checking out my webpage!
     4. No ads on my webpage. By analyzing code found in Wix templates (popular website builder) 
         I found that Wix has inserted a plethora of POTENTIAL ads to be displayed on pages 
         made using their software. This left a sour taste in my mouth as
-        I want this page to be about MY work. -->
+        I want this page to be about MY work. 
+    5. How cool is it to have something you've created on display?!-->
+
 <html lang="en">
    <head>
         <!--Link CSS sheet using this command-->
@@ -17,33 +19,44 @@ Thanks for checking out my webpage!
         <title>Jonathan-de-Laine | Mechanical Engineering</title>
    </head>
 
-   <header class = "navbar">
-
+    <header class = "navbar">
+        <div class="logo"> Pretty logo go here </div>
+        <nav class = "nav-container">
+            <a>About</a>
+            <a>Portfolio</a>
+            <a href = https://docs.google.com/document/d/1FtwfFpAc4VnhXrvYu66Rjh7Vdgf1PfKgwoKFvHgJ72E/edit?usp=sharing target = "_blank">Resume</a>
+        </nav>
+        <div class="nav-icons">
+            <a href="https://www.linkedin.com/in/jonathan-de-laine" target="_blank">
+                <img width="50" height="50" alt="LinkedIn Icon" src=images/Linkedin-Icon-BW.png>
+            </a>
+        </div>
     </header>
    <body class = "site-container">
         <main>
-            
-
             <div class = "allpanels">
                     <!--Experiment with collapsibles here-->
                 <button type = "button" class = "panel">
 
                     <img class = "panel-img" src = images/MQTT-Cat-Feeder.jpg>
-                    <div class="panel-overlay">
-                        <div class="panel-overlay-text">
-                            MQTT Smart Cat Feeder
-                        </div>
+                    <div class="panel-overlay"></div>
+                    <div class="panel-overlay-text">
+                        MQTT Smart Cat Feeder
                     </div>
                    
-                    
-                    
                 </button>
                     <div class = "panel-content"> 
                         <p>Lorem ipsum...</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TNy9TzANYZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    
                 <button type = "button" class = "panel">
                     
                     <img class = "panel-img" src = images/3D-Printed-Turbine.jpg>
+                    <div class="panel-overlay"></div>
+                    <div class="panel-overlay-text">
+                        3D Printed Turbine Challenge
+                    </div>
 
                 </button>
                     <div class = "panel-content"
