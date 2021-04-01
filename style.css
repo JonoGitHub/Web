@@ -3,21 +3,53 @@
 /*CSS is used to control styling of text and sections marked up in HTML*/
 /*Call out the class or ID used in HTML using '.' icons or modify segments like body*/
 
-.site-container {
+.navbar { 
+    /* Annoyingly, this header inherits "body" properties (width) despite being outside the body */
+    /* Plausible fix: set max-width in "allpanels" instead of container*/
+    /* Fix worked perfectly!*/
+    position: sticky;
+    /* padding: 25px 5% 5% 25px; */
+    box-shadow: 0px 3px 8px -3px #787FF6;
+    display: flex;
+    background-color: white;
     width: 100%;
-    max-width: 1200px;
+    height: 60px;
+    margin: 0;
+}
+.logo {
+    position: relative;
+    padding: 0 5%;
+    margin: 0;
+    border: 2px solid green;
+}
+.nav-container {
+    border: 2px solid blue;
+    text-align: center;
+    width: 50%;
+}
+.nav-container a {
+    padding: 0 25px;
+}
+.nav-icons {
+    padding: 0 7%;
+    border: 2px solid red;
+}
+
+
+.site-container {
+    /* width: 100%; */
+    /* max-width: 1200px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
 
     float: none;
     /*border: 2px solid blue;*/
+    background-color: aliceblue;
 }
 * {
     box-sizing: border-box;
 }
-body {
-    background-color:aliceblue;
-}
+
 a {
   text-decoration: none;  
 }
@@ -25,6 +57,10 @@ a {
    display: flex;
    flex-wrap: wrap;
    position: relative;
+   padding-top: 35px;
+   max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
    /* border: 2px solid yellow; */
 }
 .panel {
