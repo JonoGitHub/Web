@@ -20,7 +20,7 @@ Thanks for checking out my webpage!
    </head>
 
     <header class = "navbar">
-        <div class="logo"> Pretty logo go here </div>
+        <a class="logo" href = "https://kbeeart.com" target = "_blank"> Pretty logo go here </a>
         <nav class = "nav-container">
             <a>About</a>
             <a>Portfolio</a>
@@ -46,8 +46,38 @@ Thanks for checking out my webpage!
                    
                 </button>
                     <div class = "panel-content"> 
-                        <p>Lorem ipsum...</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TNy9TzANYZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="banner">
+                            <div class="banner-thumbnail-container">
+                                <img class = "banner-thumbnail" src = images/MQTT-Cat-Feeder.jpg>
+                            </div>
+                            <div class="banner-titledesc">
+                                <h2>Project title</h2>
+                                <p>The world's coolest cat feeder | Fall 2019</p>
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <h2>Summary</h2>
+                            <p>
+                                Utilizing Message Query Telemtery Transport (MQTT) connectivity and an ESP32 microcontroller, this cat feeder was designed to 
+                                allow the user to remotely dispense food and check food level remaining in a cat food bowl. This project was created as a final project
+                                for my "Internet of Things" course at UC Berkeley. See the video below to see the product in action! 
+                            </p>
+                            <iframe class = "media" width="560" height="315" src="https://www.youtube.com/embed/TNy9TzANYZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
+                        <div class="description">
+                            <h2>Description</h2>
+                            <p>Lorem ipsum...</p>
+                        </div>
+                        <div class="electromechanical">
+                            <h2>Electromechanical Detail</h2>
+                            <p>Lorem ipsum...</p>
+                        </div>
+                        <div class="Software">
+                            <h2>Software</h2>
+                            <p>Lorem ipsum...</p>
+                        </div>
+                        <button type = "button" class = "collapse">Click to Collapse</button>
                     </div>
                     
                 <button type = "button" class = "panel">
@@ -59,7 +89,7 @@ Thanks for checking out my webpage!
                     </div>
 
                 </button>
-                    <div class = "panel-content"
+                    <div class = "panel-content">
                         <p> Lorem ipsum...</p>
                     </div>
             </div>
@@ -94,9 +124,21 @@ Thanks for checking out my webpage!
         <script> /* This script is used to hide/show project descriptions on click */
             document.querySelectorAll('.panel').forEach(button => {
                 button.addEventListener('click', () => {
-
+                    
+                    //DO NOT MODIFY!!!!!!!!!!!!!!!!!!!!
                     button.classList.toggle('panel-content-active')
+                    //DONT DO IT
+                });
+            });
+        </script>
 
+        <script> /*FIXED!*/
+            document.querySelectorAll('.collapse').forEach(button => {
+                button.addEventListener('click', () => { //This listener works. Need to set function properly
+                    //console.log('Press')//confirmed this shows up in console
+                    document.querySelectorAll('.panel-content-active').forEach(button => {
+                        button.classList.toggle('panel-content-active')
+                    });
                 });
             });
         </script>
