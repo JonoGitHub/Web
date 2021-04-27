@@ -34,6 +34,58 @@ Thanks for checking out my webpage!
     </header>
    <body class = "site-container">
         <main>
+            <div class="aboutmecontainer">
+                <div class="aboutme">
+                    <div class="aboutmetext">
+                        <h2>About me</h2>
+                        <h3>Jonathan de Laine | Recent Mechanical Engineering Graduate</h3>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img class = "thumbimg" src = "images/AusLogo.png" alt = "AusLogo">
+                                </td>
+                                <td>
+                                    <p>Australian citizen and U.S. Permanent Resident (20+yrs)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img class = "thumbimg" src = "images/work.png" alt = "WorkIcon">
+                                </td>
+                                <td>
+                                    <p>Previous Construction and Warehouse Laborer <br>
+                                        and Returning Student
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="specialtablerow">
+                            <div class="specialimgcontainer">
+                                <img class = "thumbimgEx" src = "images/ElectricDiploma.jpg" alt = "Diploma">
+                            </div>
+                            <div class="specialtextcontainer">
+                                <p>
+                                    B.S. Mechanical Engineering | UC Berkeley 2020 | 3.72 <br>
+                                    A.S. Engineering; Physics; Mathematics | Chaffey College 2018 | 4.0
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="aboutmeimg"></div> <!--Set image in CSS-->
+                </div>
+            </div>
+            <div class="hireme">
+                <div class="hiremetext1">
+                    Hire Me
+                </div>
+                <div class="hiremetext2">
+                    <p>
+                        Looking to expand your team? I am currently looking for full time and internship positions. <br>
+                        <a>Click Here</a> to see my contact information
+                    </p>
+                </div>
+            </div>
             <div class = "allpanels">
                     <!--Experiment with collapsibles here-->
                 <button type = "button" class = "panel">
@@ -67,15 +119,158 @@ Thanks for checking out my webpage!
                         
                         <div class="description">
                             <h2>Description</h2>
-                            <p>Lorem ipsum...</p>
+                            <p>
+                                This project was the final portion of my "Electronics for the Internet of Things (IOT)" course at UC Berkeley for the Fall 2019 Semester.
+                                The goal of the project was to combine what you had learned in the class to create an exciting IoT application which we were to build, and demonstrate as a group.
+                                The project had to meet four (4) functionality criteria:
+                                <ol>
+                                    <li>Sensing - acquire information from the "real world" such as environmental parameters, motion, location, etc.</li>
+                                    <li>Actuation - acting on the environment with motors, switches, light, sound, etc.</li>
+                                    <li>Computing - Using data gathered from sensors to control actuation and send and get data from the cloud.</li>
+                                    <li>Communication - Communicate wirelessly</li>
+                                </ol>
+                            </p>
                         </div>
                         <div class="electromechanical">
                             <h2>Electromechanical Detail</h2>
-                            <p>Lorem ipsum...</p>
+                            <div class="electromechanical-container">
+                                <div class="electromechanical-tools">
+                                    <h3>Tools Used</h3>
+                                    <ul>
+                                        <li>
+                                            Laser Cutter
+                                        </li>
+                                        <li>
+                                            3D Printer
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class = "electromechanical-text">
+                                    <div class="parts">
+                                        <h3>Parts List</h3>
+                                            Mechanical
+                                        <ol>
+                                            <li>
+                                                Plywood Panels
+                                            </li>
+                                            <li>
+                                                3D Printed Impeller
+                                            </li>
+                                            <li>
+                                                3D Printed Funnel
+                                            </li>
+                                        </ol>
+                                            Electrical
+                                        <ol>
+                                            <li>
+                                                ESP32 - Used in "computing" and "communication"
+                                            </li>
+                                            <li>
+                                                Nema 17 Stepper Motor - Used in "actuation"
+                                            </li>
+                                            <li>
+                                                L298N Stepper Motor Driver
+                                            </li>
+                                            <li>
+                                                    Ultrasonic Distance Sensor - Used in "sensing"                                                </li>
+                                            <li>
+                                                    5V Speaker (Unused)
+                                            </li>
+                                        </ol>
+                                    </div>
+                                        
+                                    
+                                </div>
+                                <div class = "assembly">
+                                    <h3>Prototype and Assembly</h3>
+                                    <p class = "footnote">
+                                        All pieces of the structure were made of plywood cut on laser cutter designed to slot together like puzzle pieces.<br> Time lapse shown below of front engraving.
+                                    </p>
+                                    <iframe class = "media" width="560" height="315" src="https://www.youtube.com/embed/oNBoBCoIGPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class = "ExImages">
+                                        <img src = images/FeederPrototype.jpg alt = "CAD Prototype" width = "30%" height = "auto">
+                                        <img src = images/FeederFunnel.jpg alt = "CAD 3D Funnel" width = "30%" height = "auto">
+                                        <img src = images/FeederRotor.jpg alt = "CAD Impeller" width = "30%" height = "auto">
+                                    </div>
+                                    
+                                    <p>
+                                        Impellor (Right image) resides inside funnel assembly (images below) and attaches to the stepper motor with a shaft coupler.
+                                    </p>
+                                </div>
+                                
+                            </div>
                         </div>
+
+                        <div class="ProjectImages">
+                            <h2>Images</h2>
+                            <img class = "ProjectImgPanel" src = "images/CatFeederChassis.jpeg" alt = "Outside of Feeder">
+                            <img class = "ProjectImgPanel" src = "images/CatFeederRear.jpeg" alt = "Back of Feeder">
+                            <img class = "ProjectImgPanel" src = "images/CatFeederInside.jpeg" alt = "Feeder Electronics">
+                            <img class = "ProjectImgPanel" src = "images/FeederImpellor.jpeg" alt = "Feeder Impeller">
+                            <p class = "footnote">
+                                (Top-Left): Front of Cat Feeder and ultrasonic sensor <br>
+                                (Top-Right): Backside of Cat Feeder and Nema17 Stepper Motor<br>
+                                (Bottom-Left): Inside of Cat Feeder showing L298N Motor Driver and ESP32<br>
+                                (Bottom-Right): Inside of Cat Feeder Funnel showing Impellor loaded with Apple Jacks Cereal
+                            </p>
+
+                        </div>
+                            
+                        
                         <div class="Software">
                             <h2>Software</h2>
-                            <p>Lorem ipsum...</p>
+                            <div class = "Software-container">
+                                <ul>
+                                    <li>
+                                        <img width="75" height="75" alt="Telegram Icon" src=images/TelegramIcon.png>
+                                        Telegram
+                                    </li>
+                                    <li>
+                                        <img width="75" height="75" alt="Arduiino Icon" src=images/ArduinoIcon.png>
+                                        Arduino
+                                    </li>
+                                    <li>
+                                        <img width = "75" height = "75" alt = "SOLIDWORKS Icon" src=images/Solidworks-Logo.png>
+                                        SOLIDWORKS
+                                    </li>
+                                </ul>
+                                <p class = "software-text">
+                                    To handle the communication criteria of the project, I chose to use the popular messaging app Telegram. 
+                                    I chose Telegram as the platform as native support for "Telegram Bots" which survey the Telegram API and execute actions based on input.
+                                    A Telegram bot was set up to interact with the user and give notifcations when food was dispensed or to notify the user of food level in the bowl.<br>
+                                    As both the ESP32 and the Bot were subscribed to the same messaging app, we were able to communicate wirelessly to our ESP32 to issue commands, acting as an MQTT. <br>
+    
+                                    <br>
+                                    All code was written in the Arduino environment. A special library "UniversalTelegramBot.h" was utilized to connect the ESP32 to Telegram. <br>
+
+                                    <br>
+                                    Prototypes for the structure of the project and STL files used for 3D printing were all produced in SOLIDWORKS.
+                                </p>
+                            </div>
+                            <div class="software-images">
+                                <div class="ImageDesc">
+                                    Image of UI
+                                </div>
+                                <img class = "ImageDisp" alt = "UI Image" src = "images/FeederUI.png">
+                            </div>
+                            <embed src = "images/CatFeederCode.pdf" type = "application/pdf" width = "100%" height = "250px"/>
+                            <p class = "footnote">Note: In the code above we also included the ability for our feeder to play music! Unfortunately we did not have enough memory storage on the ESP32 to support this natively.
+                                Eventually the music playing capability was abandoned.
+                            </p>
+                            
+                        </div>
+                        <div class="Result">
+                            <h2>Results and Lessons</h2>
+                            <p>
+                                The final grade received on this project was a 95/100 resulting in a solid A. 5 points were deducted due to a jam of "cat food" 
+                                during the final demonstration of our project.<br>
+
+                                This project helped to solidify some of the shortcomings of additive manufacturing. The shaft used to attach our 3D Printed
+                                impeller faced large cantilevered forces that were not adequately handled and thus eventually led to failure of the part.<br>
+
+                                In the future, a bearing will be used to held support the impeller's shaft and prevent excessive stress on the part.
+                            </p>
                         </div>
                         <button type = "button" class = "collapse">Click to Collapse</button>
                     </div>
@@ -90,7 +285,135 @@ Thanks for checking out my webpage!
 
                 </button>
                     <div class = "panel-content">
-                        <p> Lorem ipsum...</p>
+                        <div class="banner">
+                            <div class="banner-thumbnail-container">
+                                <img class = "banner-thumbnail" src = images/TurbineBladeTop.png>
+                            </div>
+                            <div class="banner-titledesc">
+                                <h2>3D Printed Turbine Challenge</h2>
+                                <p> Building the Best 3D Printed Turbine with the Least Material | Spring 2019</p>
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <h2>Summary</h2>
+                            <p>
+                                This project was one of the first I was involved in at UC Berkeley. Presented in our Three-Dimensional-Modeling course, the goal 
+                                of this project was to produce a fully 3D printed wind turbine to compete against other groups in the following categories: <br>
+                                <ol>
+                                    <li>
+                                        Maximum power produced using customized turbine profile
+                                    </li>
+                                    <li>
+                                        Deflection of the structure under 1kg loading
+                                    </li>
+                                    <li>
+                                        Total weight of structure
+                                    </li>
+                                    <li>
+                                        Cost of material
+                                    </li>
+                                </ol>
+                            </p>
+                            <iframe class = "media" width="560" height="315" src="https://www.youtube.com/embed/To7v7uBzMp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="Scoring">
+                            <h2>Scoring Breakdown</h2>
+                            <p>
+                                Final results for this project were based on the following scoring rubric:
+                                <ol>
+                                    <li>Power - Total power (in Watts) produced by the turbine when connected to a potentiometer. <span>(35%)</span></li>
+                                    <li>Deflection - Total deflection (in mm) with 1kg of mass applied to top of tower. <span>(30%)</span></li>
+                                    <li>Weight - Total mass of the tower and motor. <span>(20%)</span></li>
+                                    <li>Meeting specs and Creativity <span>(15%)</span></li>
+                                </ol>
+                                <br>
+                                Bonus points (5% each) were awarded to teams with: <br> a) highest power generation <br> b) highest stiffness to weight
+                            </p>
+                            <h3>Mandatory Criteria</h3>
+                            <p>
+                                <ul>
+                                    <li>
+                                        Distance from top of platform to bottom of motor shaft: 16.00&#177;1/16 in.
+                                    </li>
+                                    <li>
+                                        Volume of ABS printed should not exceed 18.0in&sup3;
+                                    </li>
+                                    <li>
+                                        Minimum of two parts in tower assembly
+                                    </li>
+                                    <li>
+                                        Diameter of area swept by blade must not exceed 6.0in
+                                    </li>
+                                    <li>
+                                        Radial symmetry with respect to center of the lower platform
+                                    </li>
+                                    <li>
+                                        Minimum three contact points
+                                    </li>
+                                </ul>
+                            </p>
+                            <img width = "300px" height = "300px" src ="images/TowerCriteria.png">
+                            
+                        </div>
+                        <div class = "Design">
+                            <embed src = "images/TowerSketch.pdf" type = "application/pdf" width = "100%" height = "400px"/>
+                            <img class = "DesignPanel" alt = "Turbine Blade General" src = "images/TurbineBlade.png">
+                            <img class = "DesignPanel" alt = "Turbine Cross Sections" src = "images/TurbineSketchProfiles.png">
+                            <div class="PanelExplanation">
+                                <p>
+                                    I took charge of designing the turbine blade sketch profiles. <br>
+                                    Using scientific journal articles I discovered that the most effective airfoil pattern used in wind turbines was the 
+                                    NACA 4412 airfoil. Using an Excel sheet, I scaled the profile to follow a logarithmic change in cross-section area along the blade as recommended by several academic papers.<br>
+                                    <span>Images</span> <br>
+                                    (Top): Final Blade Model and Cross-sectional sketch profiles of blade segments. <br>
+                                    (Bottom) NACA4412 Airfoil.
+                                </p>
+                            </div>   
+                            <img class = "DesignPanelExtended" alt = "NACA4412 Airfoil" src = "images/NACAairfoil.png"> 
+                            
+                            <img class = "DesignPanel" alt = "Upper Tower" src = "images/TowerUpper.png">
+                            <img class = "DesignPanel" alt = "Lower Tower" src = "images/TowerLower.png">
+                            <div class="PanelExplanation">
+                                <p>
+                                    The tower used followed closely the design our group created in sketches at the beginning of the assignment. We took
+                                    inspiration from classical trussed structures such as a farm windmill to produce a strong foundation with minimal material.<br>
+                                    <br>
+                                    Slight modification of the models shown to the left were made to remove the necessity of support material. This change involved printing a single face 4 times to glue together in final assembly. <br>
+                                    <span>Images</span> <br>
+                                    (Left): Top half of tower where motor sits.
+                                    (Right): Bottom half of tower. Supports top.
+                                </p>
+                            </div>
+                        </div>
+                        <div class = "TestingandResults">
+                            <img class = "TestImg" alt = "Deflection Test" src = "images/DeflectionTest.jpg">
+                            <div class="TestResults">
+                                <p>
+                                    The testing rig shows a depth gauge being used to measure deflection of the tower when successive 100g weights being hung off the tower.
+                                </p>
+                                <div class = "MedalDisplay">
+                                        <img width = "10%" alt = "1st Place" src = "images/1st.png">
+                                </div>
+                                <p>
+                                    <span>Results</span> <br>
+                                    Our tower ended up with a deflection of 1.02mm of deflection under a 1kg lateral loading. Due to the low volume of our tower, this result meant that we received a bonus 5% points
+                                    to our final score as our tower had the highest stiffness to weight ratio.
+                                </p>
+                            </div>
+                            
+                            
+                            
+                            <img class = "TestImg" alt = "Power Test" src = "images/WindTest.jpg">
+                            <div class="TestResults">
+                                <p>
+                                    The testing rig shows a depth gauge being used to measure deflection of the tower when successive 100g weights being hung off the tower.
+                                </p>
+                                <p>
+                                    The blade attached to our tower produced the highest max rpm at 8020RPM with 25 MPH wind speed.
+                                </p>
+                            </div>
+                        </div>
+                        <button type = "button" class = "collapse">Click to Collapse</button>
                     </div>
             </div>
             
@@ -134,7 +457,7 @@ Thanks for checking out my webpage!
 
         <script> /*FIXED!*/
             document.querySelectorAll('.collapse').forEach(button => {
-                button.addEventListener('click', () => { //This listener works. Need to set function properly
+                button.addEventListener('click', () => {
                     //console.log('Press')//confirmed this shows up in console
                     document.querySelectorAll('.panel-content-active').forEach(button => {
                         button.classList.toggle('panel-content-active')
