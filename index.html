@@ -86,8 +86,33 @@ Thanks for checking out my webpage!
                     </p>
                 </div>
             </div>
+            <div class="aboutwebsite">
+                <div class="webthumb">
+                    <img src = "images/websiteprogress.jpg" alt = "Website Rough Draft" width = "100%" height = "auto">
+                </div>
+                <div class="webexplanation">
+                    <h3>About this Website</h3>
+                    <p>
+                        Welcome!<br> This page was created for two purposes: 
+                    </p>
+                    <ul>
+                        <li>To serve as a portoflio to market my talents</li>
+                        <li>My first venture into version control and Github!</li>
+                    </ul>
+                    <p>
+                        I created this website from scratch in Visual Studio so all functionality, design choices (or lack thereof!), and code written is my own. Feel free to right click anywhere on the page and select "inspect element" if you're curious! <br>
+                        Please bear in mind that this project is continually adapting as I get more familiar with HTML, CSS, and Javascript. <br>
+                        <br>Thanks for visiting!
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h2>Portfolio</h2>
+            </div>
             <div class = "allpanels">
                     <!--Experiment with collapsibles here-->
+                
                 <button type = "button" class = "panel">
 
                     <img class = "panel-img" src = images/MQTT-Cat-Feeder.jpg>
@@ -415,6 +440,127 @@ Thanks for checking out my webpage!
                         </div>
                         <button type = "button" class = "collapse">Click to Collapse</button>
                     </div>
+
+                    <button type = "button" class = "panel">
+                    
+                        <img class = "panel-img" src = images/VUChassis.jpg>
+                        <div class="panel-overlay"></div>
+                        <div class="panel-overlay-text">
+                            ESP32 Volume Unit Meter (Capstone)
+                        </div>
+    
+                    </button>
+                        <div class="panel-content">
+                            <div class="banner">
+                                <div class="banner-thumbnail-container">
+                                    <img class = "banner-thumbnail" src = images/ESP32VU.png>
+                                </div>
+                                <div class="banner-titledesc">
+                                    <h2>ESP32 VU Meter</h2>
+                                    <p> Recapturing electronic music show atmosphere during COVID-19 | Fall 2020</p>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <h2>Summary</h2>
+                                <p>
+                                    This project was the final portion of the Mechanical Engineering curriculum under COVID-19 style restrictions. 
+                                    All UC Berkeley Mechanical Engineering students must take "Mechatronics Design" - a capstone course wherein the knowledge gained over the entire undergraduate curriculum is intended to 
+                                    be used. Under COVID restrictions, this course's typical semester-long project was condensed into a "mini-project" to be more equitable to students without machine shop access at home. <br>
+                                    <br>
+                                    As a big-time electronic music fan, I wanted to take this opportunity to make a "wow!" inspiring light show. 
+                                </p>
+                                <iframe class = "media" width="560" height="315" src="https://www.youtube.com/embed/Ta7XTpHvzSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="writeup">
+                                <h2>Requirements and Writeup</h2>
+                                <p>
+                                    For this project I chose to follow the first or two prompts given to us: "Rough Physical Prototype at Home" <br>
+                                    <br>
+                                    For this prompt I was asked to create a product for my own use that could be for learning and entertainment or a useful widget.<br>
+                                    This prompt had two specific requirements:
+                                    <ol>
+                                        <li>A Mechanical Part (e.g., housing and/or mechanisms)</li>
+                                        <li>A circuit with sensors and actuators</li>
+                                    </ol>
+                                    <br>
+                                    To achieve this, I designed and 3D printed a housing to satisfy the mechanical portion and included an ESP32, a MOSFET and LED strip to serve as an actuator, and a microphone and temperature sensor to act as sensors. 
+                                    Additionally, I also included a cooling fan as another actuator.
+
+                                    <br> Below is the full writeup for the project, containing all details of the project including photos, a circuit diagram, finite state machine diagram, descriptions, and all code written.
+                                </p>
+                                <embed src = "images/CapstonePDF.pdf" type = "application/pdf" width = "100%" height = "500px"/>
+                            </div>
+                            <button type = "button" class = "collapse">Click to Collapse</button>
+                        </div>
+
+                    <button type = "button" class = "panel">
+                    
+                        <img class = "panel-img" src = images/tankremovedSS.jpg>
+                        <div class="panel-overlay"></div>
+                        <div class="panel-overlay-text">
+                            Phone Case Super Soaker
+                        </div>
+                    </button>
+
+                    <div class="panel-content">
+                        <div class="banner">
+                            <div class="banner-thumbnail-container">
+                                <img class = "banner-thumbnail" src = "images/annotatedexploded.png" alt = "exploded view">
+                            </div>
+                            <div class="banner-titledesc">
+                                <h2>Phone Case Super Soaker</h2>
+                                <p> Adding squirt gun action to your iPhone! | Spring 2019</p>
+                            </div>
+                        </div>
+
+                        <div class="summary">
+                            <h2>Summary</h2>
+                            <p>
+                                One of the more light-hearted and well received projects I have been a part of. This project was an end-of-semester showcase project
+                                with the prompt "adding an extra functionality to an iPhone." This special iPhone case has an integrated squirt gun functionality with easily removable water tank for refilling.
+                                Under this project I was the head CAD modeling designer responsible for designing the iPhone case, water tanks, and sliding-to-snap fit mechanism for the tank.
+                            </p>
+                            <iframe class = "media" width="560" height="315" src="https://www.youtube.com/embed/fWMj6n9Ow2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="casedesign">
+                            <div class="designblip">
+                                <h2>Design</h2>
+                                <p>
+                                    As I was in charge of all CAD for this project, I will focus here primarily on the design process and challenges faced.
+                                </p>
+                            </div>
+                            <div class="casedesignimg">
+                                <img class = "filldiv" src = "images/ipxcasedrawing.JPG" alt = "iphone X case schematic">
+                            </div>
+                            <div class="casedesigntext">
+                                <h3>Case</h3>
+                                <p>
+                                    The natural first step for the design of this project was to construct a CAD model of an iPhone X case.
+                                    Shown to the left is the engineering drawing for the final product that became the foundation for the remaining more difficult portions of the project.
+                                    The drawing seen results from a combination of digital calipers to measure my iPhone, Apple's online documentation, and trial-and-error. The variance between 3D prints
+                                    meant that this portion of the project was particularly tricky and required many prints.
+                                </p>
+                            </div>
+                            <div class="casedesignimg">
+                                <img class = filldiv src = "images/allcases.JPG" alt = "many printed cases">
+                            </div>
+                            <div class="casedesigntext">
+                                <h3>Case Prototypes</h3>
+                                <p>
+                                    The image on the left highlights the difficulty in producing tight fits using 3D printed technology.
+                                    Although all cases on a macro scael appear similar, millimeter changes to important dimensions like width, height, fillet radius,
+                                    chamfers, and modifications to the "arms" holding to the front of the phone were made until adequate fit was achieved.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="casechallenges">
+
+                        </div>
+                        
+
+                        <button type = "button" class = "collapse">Click to Collapse</button>
+                    </div>
+
             </div>
             
 
@@ -427,7 +573,7 @@ Thanks for checking out my webpage!
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.twitch.tv/jonodude0" target="_blank">
+                                <a href="https://www.twitch.tv/jonoAU" target="_blank">
                                     <img width="32" height="32" alt="Twitch Icon" src=images/Twitch-Icon.png>
                                 </a>
                             </li>
