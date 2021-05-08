@@ -501,12 +501,30 @@ a {
     margin: 0;
     padding: 0;
 }
+.casedesignimgSBS {
+    display: block;
+    position: relative;
+    width: 45%;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 .casedesigntext {
     display: block;
     position: relative;
     margin: 0;
     padding: 0;
     width: 50%;
+    border: 2px solid mediumorchid;
+}
+.casedesigntextlarge {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     border: 2px solid mediumorchid;
 }
 .casedesigntext h3 {
@@ -522,6 +540,11 @@ a {
     padding: 0;
     width: 100%;
     height: 100%;
+}
+.subtitle {
+    display: block;
+    position: relative;
+    width: 100%;
 }
 
 .collapse {
