@@ -20,27 +20,31 @@
     width: 100%;
     height: 60px;
     margin: -10px 0 0 0;
+    font-family: Helvetica;
+    color: #aaa;
 }
 .logo {
     position: relative;
     padding: 0 5%;
     margin: 0;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .nav-container {
-    border: 2px solid blue;
-    text-align: center;
+    /* border: 2px solid blue; */
+    text-align: right;
     width: 50%;
 }
 .nav-container a {
-    padding: 0 25px;
+    padding: 0 20px;
 }
 .nav-icons {
-    padding: 0 7%;
-    border: 2px solid red;
+    padding: 0 5%;
+    /* border: 2px solid red; */
 }
 
 .site-container {
+    margin: 0; /*removed annoying space bug */
+    padding: 0;
     float: none;
     background-color: aliceblue;
 }
@@ -50,16 +54,30 @@
 
 a {
   text-decoration: none;  
+  color: #aaa;
+}
+a:visited {
+    text-decoration: none;
+    color: #aaa;
+}
+a:hover {
+    text-decoration: none;
+    color: #FDB515;
+    cursor: pointer;
 }
 .aboutmecontainer {
     display: block;
     position: relative;
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
     width: 100%;
     /* padding-top: 35px; */
-    box-shadow: 0px 3px 8px -3px #787FF6;
-    background-color: white;
+    /* box-shadow: 0px 3px 8px -3px #787FF6; */
+    background: radial-gradient(
+        circle at top left,
+    #75BdE0,
+    #3B7097
+    );
 }
 .aboutme {
     display: flex;
@@ -67,16 +85,37 @@ a {
     position: relative;
     max-width: 1200px;
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 2% 0 4% 0;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    
 }
 .aboutmetext {
     display: block;
     position: relative;
     width: 60%;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
+    
+    font-family: helvetica;
+    color: white;
+}
+.aboutmetext p {
+    color: white;
+}
+.aboutmetext h2 {
+    display: block;
+    font-family: helvetica;
+    text-align: center
+}
+.aboutmetext h3 {
+    display: block;
+    font-family: helvetica;
+    text-align: center
+}
+.aboutmetext span {
+    color: #FDB515;
+    padding-left: 5px;
 }
 .aboutmeimg {
     display: block;
@@ -86,7 +125,7 @@ a {
     width: 40%;
     height: auto;
     min-height: 30%;
-    border: 2px solid navy;
+    /* border: 2px solid navy; */
     background-image: url("images/Graduation.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -106,7 +145,7 @@ a {
     margin: 0;
     padding: 0;
     width: 100%;
-    border: 2px solid magenta;
+    /* border: 2px solid magenta; */
 }
 .specialimgcontainer {
     display: block;
@@ -136,36 +175,106 @@ a {
     width: calc(100% - 75px);
     height: auto;
 }
-.hireme {
+.hiremecontainer {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    width: 100%;
+    /* border: 2px solid orange; */
+    justify-content: center;
+    padding: 35px 0 20px 0;
+}
+.hiremecontainer p {
+    display: block;
+    position: relative;
+    margin-right: 20px;
+    font-size: 11pt;
+    font-family: helvetica;
+    color: white;
+}
+.hireme {
+    display: block;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-family: helvetica;
+    font-size: 15pt;
+    padding: 15px 45px 15px 45px;
+    cursor: pointer;
+}
+.hireme:hover {
+    color: #FDB515;
+    border: 1px solid #FDB515;
+}
+
+.hireme:visited {
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+.contactinfo { /*Use JS to change to Flex on click */
+    display: none;
+    overflow: auto;
+    flex-wrap: flex;
+    position: relative;
+    width:100%;
+    /* border: 2px solid cadetblue; */
+}
+
+.censor {
+    display: flex;
+    flex-wrap: wrap;
+    background: none;
+    color: white;
+    border: none;
+    font-family: helvetica;
+    width: 25%;
+    white-space: nowrap;
+    margin: 0 40px;
+}
+.censor:hover .default{
+    display: none;
+}
+.censor:hover .hiddenemail:before{
+    content: "delaine.jon@gmail.com";
+}
+.censor:hover .hiddenalt:before{
+    content: "caljono@berkeley.edu";
+}
+.censor:hover .hiddenphone:before{
+    content: "(479) 871-9626";
+}
+
+.skillspanel {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: white;
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid purple; */
+}
+.skillspanelinner {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    max-width: 1200px;
-    height: auto;
-    align-items: center;
-    border: 2px solid springgreen;
+    justify-content: center;
+    /* border: 2px solid orange; */
+    padding: 55px 0 30px 0;
 }
-.hiremetext1{
+.skillitem {
     display: block;
     position: relative;
-    margin: 0;
-    padding: 0;
-    width: 40%;
-    height: auto;
-    background-color: white;
+    filter: grayscale(100%);
+    /* border: 2px solid red; */
+    margin: 15px 30px 15px 30px;
 }
-.hiremetext2{
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    width: 60%;
-    height: auto;
-    background-color: white;
-}
+
 .aboutwebsite {
     display: flex;
     flex-wrap: wrap;
@@ -178,7 +287,7 @@ a {
     background-color: white;
     align-items: center;
     justify-content: center;
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     
 }
 .webthumb {
@@ -206,11 +315,39 @@ a {
    display: flex;
    flex-wrap: wrap;
    position: relative;
-   padding-top: 35px;
+   margin-top: 0;
    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
    /* border: 2px solid yellow; */
+}
+.headerlinebreak {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    /* border: 2px solid green; */
+    background-color: white;
+    align-items: center;
+    margin: 25px 0 0 0;
+    padding: 25px 0 0 0;
+}
+.allpanels h2 {
+    display: block;
+    width: 10%;
+    font-family: helvetica;
+    /* border: 2px solid yellow; */
+    margin-left: 25px;
+}
+.allpanels p {
+    display: block;
+    width: 70%;
+    font-family: helvetica;
+    text-align: center;
+    font-size: 10pt;
+    /* border: 2px solid maroon; */
+    text-align: left;
+    margin: 0 0 0 15px;
 }
 .panel {
     cursor: pointer;
@@ -567,8 +704,12 @@ a {
     height: 100%;
 }
 
-.panel-content-active + .panel-content { /*This  */
+/*Javascript*/
+.panel-content-active + .panel-content { 
     display: block;
+}
+.contactinfo-active + .contactinfo {
+    display: flex;
 }
 .panel:hover .panel-overlay-text {
     display: block;

@@ -22,8 +22,9 @@ Thanks for checking out my webpage!
     <header class = "navbar">
         <a class="logo" href = "https://kbeeart.com" target = "_blank"> Pretty logo go here </a>
         <nav class = "nav-container">
-            <a>About</a>
-            <a>Portfolio</a>
+            <a href = "#AboutLanding">About</a>
+            <a href = "#PortfolioLanding">Portfolio</a>
+            <a href = "#SkillsLanding">Skills</a>
             <a href = https://docs.google.com/document/d/1FtwfFpAc4VnhXrvYu66Rjh7Vdgf1PfKgwoKFvHgJ72E/edit?usp=sharing target = "_blank">Resume</a>
         </nav>
         <div class="nav-icons">
@@ -32,13 +33,13 @@ Thanks for checking out my webpage!
             </a>
         </div>
     </header>
-   <body class = "site-container">
+   <body id = "AboutLanding" class = "site-container">
         <main>
             <div class="aboutmecontainer">
                 <div class="aboutme">
                     <div class="aboutmetext">
-                        <h2>About me</h2>
-                        <h3>Jonathan de Laine | Recent Mechanical Engineering Graduate</h3>
+                        <h2>Hi, I'm <span>Jonathan de Laine</span></h2>
+                        <h3>Recent Mechanical Engineering Graduate</h3>
                         <table>
                             <tr>
                                 <td>
@@ -69,23 +70,72 @@ Thanks for checking out my webpage!
                                     A.S. Engineering; Physics; Mathematics | Chaffey College 2018 | 4.0
                                 </p>
                             </div>
+                            <div class="hiremecontainer">
+                                <p>Looking for Internship/Co-Op and Full Time Positions! <br>
+                                    Special Interest in Automotive Industry
+                                    </p>
+                                <button type = "button" class = "hireme">
+                                    Hire Me
+                                </button>
+                                
+                                <div class="contactinfo">
+                                    <button type = "button" class = "censor">
+                                        Email: <span class = "default">Hover</span>
+                                        <span class = "hiddenemail"></span>
+                                    </button>
+                                    <button type = "button" class = "censor">
+                                        Alt: <span class = "default">Hover</span>
+                                        <span class = "hiddenalt"></span>
+                                    </button>
+                                    <button type = "button" class = "censor">
+                                        Cell: <span class = "default">Hover</span>
+                                        <span class = "hiddenphone"></span>
+                                    </button>
+                                </div>
+                            </div>
+                                
                             
-                        </div>
+                        </div> 
                     </div>
                     <div class="aboutmeimg"></div> <!--Set image in CSS-->
                 </div>
             </div>
-            <div class="hireme">
-                <div class="hiremetext1">
-                    Hire Me
+            <div id = "SkillsLanding" class="skillspanel">
+                <div class="skillspanelinner">
+                    <div class="skillitem">
+                        <img src = "images/Solidworks-Logo.png" alt = "Solidworks Icon" width = "100px" height = "60px">
+                    </div>
+                    <div class="skillitem">
+                        <img src = "images/Fusion-360-Logo.png" alt = "Fusion 360 Icon" width = "100px" height = "60px">
+                    </div>
+                    <div class="skillitem">
+                        <img src = "images/MATLAB-logo.png" alt = "MATLAB Icon" width = "100px" height = "60px">
+                    </div>
+                    <div class="skillitem">
+                        <img src = "images/C++_Logo.png" alt = "C++ Icon" width = "60px" height = "60px">
+                    </div>
+                    <div class="skillitem">
+                        <img src = "images/Python-Logo.png" alt = "Python Logo" width = "60px" height = "60px">
+                    </div>
+                    <div class="skillitem">
+                        <img src = "images/ArduinoIcon.png" alt = "Arduino Icon" width = "100px" height = "60px">
+                    </div>
+                    <div class="skillitem">
+                        <img src = "images/HTML_Logo.png" alt = "HTML CSS JS Icon" width = "100px" height = "60px">
+                    </div>
+                    <div class="skillitem">
+                        <img src = "images/GitHub_Icon.png" alt = "GitHub Icon" width = "70px" height = "60px">
+                    </div>
+                    <div class="skillitem">
+                        <img src = "images/CNC-Icon.png" alt = "CNC Icon" width = "80px" height = "60px">
+                    </div>
+                    <div class="skillitem">
+                        <img src = "images/3d-printer-icon.png" alt = "3D Printer Icon" width = "60px" height = "60px">
+                    </div>
                 </div>
-                <div class="hiremetext2">
-                    <p>
-                        Looking to expand your team? I am currently looking for full time and internship positions. <br>
-                        <a>Click Here</a> to see my contact information
-                    </p>
-                </div>
+                
             </div>
+            
             <div class="aboutwebsite">
                 <div class="webthumb">
                     <img src = "images/websiteprogress.jpg" alt = "Website Rough Draft" width = "100%" height = "auto">
@@ -107,12 +157,13 @@ Thanks for checking out my webpage!
                 </div>
             </div>
 
-            <div>
-                <h2>Portfolio</h2>
-            </div>
-            <div class = "allpanels">
+            
+            <div class = "allpanels" id = "PortfolioLanding">
                     <!--Experiment with collapsibles here-->
-                
+                <div class = "headerlinebreak">
+                    <h2>Portfolio</h2>
+                    <p>Click on an image below to expand.</p>
+                </div>
                 <button type = "button" class = "panel">
 
                     <img class = "panel-img" src = images/MQTT-Cat-Feeder.jpg>
@@ -666,7 +717,14 @@ Thanks for checking out my webpage!
                     </div>    
             </footer>
         </main>
-
+        
+        <script>
+            document.querySelectorAll('.hireme').forEach(button => {
+                button.addEventListener('click',() => {
+                    button.classList.toggle('contactinfo-active')
+                });
+            });
+        </script>
         <script> /* This script is used to hide/show project descriptions on click */
             document.querySelectorAll('.panel').forEach(button => {
                 button.addEventListener('click', () => {
