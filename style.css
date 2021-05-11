@@ -320,6 +320,7 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
    /* border: 2px solid yellow; */
+   background-color: white;
 }
 .headerlinebreak {
     display: flex;
@@ -354,9 +355,11 @@ a:hover {
     position: relative;
     padding: 0;
     border: none;
-    max-width: calc(50% - 0.1px);
+    max-width: 49%;
     background-color: white;
     /* border: 2px solid blue; */
+    margin-left: auto;
+    margin-right: auto;
 }
 .panel-img {
     display: block;
