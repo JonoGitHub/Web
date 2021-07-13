@@ -16,6 +16,8 @@ Thanks for checking out my webpage!
    <head>
         <!--Link CSS sheet using this command-->
         <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <!-- Linking Font Family Below-->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <link rel = "icon" href = "images/JDL_Favicon_Color-01.png">
         <link rel = "image_src" href = "images/WebThumbnail.PNG">
         <meta property = 'og:title' content = 'Jonathan de Laine | Mechanical Engineer'/>
@@ -174,6 +176,165 @@ Thanks for checking out my webpage!
                     <h2>Portfolio</h2>
                     <p>Click on an image below to expand.</p>
                 </div>
+                
+                <button type = "button" class = "panel">
+                    
+                    <img class = "panel-img" src = "images/RobotThumb.jpg">
+                    <div class="panel-overlay"></div>
+                    <div class="panel-overlay-text">
+                        Beetleweight Combat Robot (Writeup in Progress)
+                    </div>
+
+                </button>
+                    <div class="panel-content">
+                        <div class="banner">
+                            <div class="banner-thumbnail-container">
+                                <img class = "banner-thumbnail" src = "images/RobotThumb.jpg">
+                            </div>
+                            <div class="banner-titledesc">
+                                <h2>3Lb Shell Spinner Combat Robot</h2>
+                                <p> Designing for Limiting Space Constraints | Spring-Fall 2020</p>
+                            </div>
+                        </div>
+                        <div class="summary">
+                            <h2>Summary</h2>
+                            <p>
+                                A full writeup of this project will be completed soon. Below is a link to the presentation I recently gave on this project. This project involves designing
+                                a 3Lb. Combat robot completely from scratch and with no prior knowledge. This project highlights my creativity in going about solving
+                                tricky design constraints - in this case, the significantly smaller-than-average height of the chassis.
+                            </p>
+                            <iframe class = "media" src="https://docs.google.com/presentation/d/e/2PACX-1vQeYp_xG90EAt1qXQyFveezfWZXhfgJ1IpzuQF3JjQYVYuYXIHaDOSXMbzF6uwBQwjWdCID1o346b0H/embed?start=false&loop=false&delayms=3000" frameborder="0" width="800" height="479" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            <p>Click through presentation above.</p>
+                            <h2>Video</h2>
+                            <iframe class = "media" width="560" height="315" src="https://www.youtube.com/embed/MGFmoTEWnng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
+                        <button type = "button" class = "collapse">Click to Collapse</button>
+                    </div>
+
+                    <button type = "button" class = "panel">
+                    
+                        <img class = "panel-img" src = "images/UAVabove.png">
+                        <div class="panel-overlay"></div>
+                        <div class="panel-overlay-text">
+                            Autonomously Stable Quadcopter Challenge (Writeup in Progress)
+                        </div>
+    
+                    </button>
+                        <div class="panel-content">
+                            <div class="banner">
+                                <div class="banner-thumbnail-container">
+                                    <img class = "banner-thumbnail" src = "images/UAVabove.png">
+                                </div>
+                                <div class="banner-titledesc">
+                                    <h2>Control of a Crazyflie® Quadcopter Platform</h2>
+                                    <p> Programming control algorithms | Fall 2019</p>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <h2>Summary</h2>
+                                <p>
+                                    This project was directly related to a Control of Unmanned Aerial Vehicles class (ME136) at UC Berkeley.
+                                    The course taught dynamics of aerial vehicles to allow for modeling of control algorithms in laboratory settings.
+                                    This projet gave experience in working with programming complex control algorithms on a memory-limited microcontroller in C++.
+                                </p>
+                            </div>
+                            <div class = "Challenge">
+                                <div class = "ChallengeContainer">
+                                    <div class = "ChallDescription">
+                                        <h2>Description of Challenge</h2>
+                                    <p>
+                                        The goal for the course was to be able to program our drone to complete a final obstacle course. In our iteration fo the course,
+                                        our drone was to aotuonmously take off, translate over a hurdle approximately 12cm tall and then land as closely as possible to a final 
+                                        landing target, 1m from the take off location.
+                                    </p>
+                                    </div>
+                                    <div class="challimg">
+                                        <img class = "filldiv" src = "images/DroneCourse.PNG">
+                                    </div>
+                    
+                                </div>
+                            </div>
+                            <div class = "Controller">
+                                <div class = "ControllerContainer">
+                                    <h2>Controller Design</h2>
+                                    <p>
+                                        The final portion of the laboratory in this course was a challenge of all previous systems implemented into our drone.
+                                        In order to complete the objective, a height estimator, horizontal position, and horizontal velocity estimater were already implemented
+                                        onto the drone using an IMU, and a distance light sensor. Throughout testing, our drone proved to be capable of holding angles programmed.
+                                    </p>
+                                    <iframe class = "media" width="560" height="315" src="https://www.youtube.com/embed/pcWOlyBm0Y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p>
+                                        To complete the challenge, additional state estimators had to be implemented to allow for translation and successful completion of the final goal.<br>
+                                        
+                                        In previous testing, we found drift of the drone off course to be a challenge.<br>
+                                        <br>
+                                        This was fixed using the following steps:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                Balancing of the drone to eliminate center of mass error. In addition to adding mass through tape,
+                                                careful center placement of the battery was ensured to keep the drone as close to the model produced in C++.
+                                                <img class = "SchemeIMG" width = "315px" height = "315px" src = "images/UAVbalancing.PNG">
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Horizontal Position Estimator Implementation.<br>
+                                                Tweaks to the horziontal position estimator formula and matrix allowed us to improve drifting behavior. This estimator, although allowing for position control,
+                                                did not allow us to have any control over the velocity of the drone. Therefore, feedback was done in the controller to allow us to
+                                                estimate velocity to improve behavior of the flight.
+                                            </p>
+                                            <img class = "SchemeIMG" width = "560px" height = "315px" src = "images/BlkDiagramUAV.PNG">
+                                            <p>
+                                                Block Diagram of Control Scheme. Pink box highlights controller additions.
+                                            </p>
+                                            <img class = "SchemeIMG" width = "560px" height = "315px" src = "images/UAVPosEst.PNG">
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Horizontal Velocity Estimator. <br>
+                                                By implementing a velocity estimator through feedback, we could effectively set a constraint on the travel speed of the drone.
+                                                For the sake of the challenge, the drone was programmed to travel at 1m/s, as it was found the drone could complete the challenge effectively
+                                                before sensor noise became a damaging factor.
+                                            </p>
+                                            <img class = "SchemeIMG" width = "560px" height = "315px" src = "images/UAVVelEst.PNG">
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Important to implementing the control scheme shown above was experimenting with Feedback constants. Process described below: <br>
+                                        <br>
+                                        The time constant for roll rate = 0.03: This number was chosen after experiments with the given value (Constant = 0.04) was found to be detrimental.
+                                        By changing to 0.03, we found the behavior of the drone to drift less with faster roll response. Values below 0.03 were tested and found to be detrimental as the roll was too erratic.<br>
+                                        <br>
+                                        The time constant for roll angle control: 0.3: This change was also done after experimenting with different values than the default values provided by the laboratory course material.
+                                        By changing from the default (Value = 0.12) to 0.3, we found the vehicle to track the target speed of 1m/s more effectively. Further, this change was also made to control drift. We found this change
+                                        provided more stable and consistent travel behavior in experiments.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "ChallResults">
+                                <h2>Final Result</h2>
+                                <p>
+                                    Initial test of the vehicle on competition day were shaky. Small changes to the balance of the drone and alignment had large effects on the distance of the drone from 
+                                    the final landing area. The drone's control schemes were subject to drift due to sensor noise. We also experienced changing behavior
+                                    due to battery charge. Shown below is the final result of our best trial on competition day. Our best result was among the closest in the course
+                                    with the drone landing roughly 12cm away from the final target.
+
+                                </p>
+                                <img width = "560px" height = "315px" src = "images/UAVObstacle.PNG">
+                                <p>
+                                    Obstacle Roughly 12cm Tall
+                                </p>
+                                <img width = "560px" height = "315px" src = "images/UAVFinalDist.PNG">
+                                <p>
+                                    Final distance: 12cm
+                                </p>
+                            </div>
+                            <button type = "button" class = "collapse">Click to Collapse</button>
+                        </div>
+
                 <button type = "button" class = "panel">
 
                     <img class = "panel-img" src = images/MQTT-Cat-Feeder.jpg>
