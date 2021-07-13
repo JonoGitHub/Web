@@ -288,6 +288,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     /* border: 2px solid blueviolet; */
+    font-family: helvetica;
     
 }
 .webthumb {
@@ -442,6 +443,55 @@ a:hover {
 .summary {
     display: block;
     border: 2px solid yellow;
+}
+.Challenge {
+    display: block;
+    /* border: 2px solid red; */
+}
+.ChallengeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid midnightblue; */
+}
+.ChallDescription {
+    display: block;
+    /* border: 2px solid pink; */
+}
+.ChallDescription h2 {
+    display: block;
+    width: 30%;
+    
+}
+.ChallDescription p {
+    display: block;
+    width: 65%;
+}
+.challimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 560px;
+    height: 315px;
+}
+.ControllerContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.SchemeIMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid orange;
+}
+.ChallResults {
+    display: block;
+
+}
+.ChallResults img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .electromechanical {
     display: block;
